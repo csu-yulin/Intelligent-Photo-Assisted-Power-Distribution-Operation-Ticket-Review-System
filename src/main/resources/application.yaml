@@ -1,6 +1,14 @@
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
 spring:
   application:
     name: IPAS
-
-server:
-  port: 8080
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/ipas_db
